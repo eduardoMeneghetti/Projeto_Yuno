@@ -1,0 +1,16 @@
+:root{
+/*COLORS*/
+--cinze-300: #D9D9D9;
+--white-100: #FFFCFC;
+--blck-300: #1E1E1E;
+
+/*Spaces*/
+--space-1600: 128px;
+--space-600: 48px;
+--space-500: 40px;
+--space-400: 32px;
+--space-300: 24px;
+--space-200: 16px;
+--space-150: 12px;
+--space-100: 8px;
+}

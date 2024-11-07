@@ -1,0 +1,16 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao{
+    background-color:var(--white-100);
+    float: right;
+}
+
+.botao:hover{
+    animation: alternate;
+    cursor: pointer;
+    border-style: groove;
+}

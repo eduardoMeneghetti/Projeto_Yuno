@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <%= favicon_link_tag 'icons/YUNO_sem_fundo.png' %>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <%= stylesheet_link_tag 'root' %>
+    <%= stylesheet_link_tag 'layout' %>
+    <%= stylesheet_link_tag 'style' %>
+    <title>Yuno</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <h1>\Yuno\</h1>
+            <%= image_tag 'icons/Login.png', alt: "HTML tutorial", size: "30x30" %>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <textarea placeholder="O que está pensando hoje?..."></textarea>
+            <button class="botao" type="submit"><strong>Enviar</strong></button>
+        </form>
+        
+        <div class="comentarios">
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
