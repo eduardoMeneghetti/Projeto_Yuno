@@ -14,5 +14,5 @@ class Postagen < ApplicationRecord
   
     belongs_to :user
     has_many :comentario
-  end
+end
   

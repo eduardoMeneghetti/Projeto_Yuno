@@ -6,11 +6,57 @@
 
 .botao{
     background-color:var(--white-100);
+    cursor: pointer;
     float: right;
 }
 
 .botao:hover{
     animation: alternate;
-    cursor: pointer;
     border-style: groove;
+}
+
+.imgBtn{
+    cursor: pointer;
+}
+
+.imgBtn:hover{
+    animation: both;    
+}
+
+table{
+    justify-content: left;
+    align-items: center;
+}
+
+.publicacoes{
+    margin-top: 5%;
+    background-color: var(--white-100);
+    font-size: 14px;
+    padding: 1%;
+}
+
+.react{
+    margin: 10px;
+    background-color: #FFFCFC;
+}
+
+.botoes_comentarios{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.teste{ 
+    text-align: right;
+    align-items: center;
+}
+
+.teste1{
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+
+.descricao{
+    text-align: left;
 }

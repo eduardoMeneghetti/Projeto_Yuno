@@ -20,10 +20,28 @@ textarea {
     height: 60px;
     resize: none;
     outline: none;
+    border:none;
 }
 
 button{
     margin-top: 10px;
     border: none;
     padding: 8px;
+    float: right;
+}
+
+div{
+    margin-top: 40px;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+table{
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
 }

@@ -11,11 +11,24 @@ class PostagensController < ApplicationController
     end
   end
 
-  def index 
-    postagens = Postagen.order('created_at DESC')
-    render json: { status: 'SUCCESS', message: 'Posts carregados', data: postagens }, status: :ok
+  def index
+    postagens = Postagen.includes(:user).order('created_at DESC')
+    postagens_json = postagens.map do |postagem|
+      {
+        id: postagem.id,
+        descricao: postagem.descricao,
+        num_comentarios: postagem.num_comentarios,
+        num_curtidas: postagem.num_curtidas,
+        created_at: postagem.created_at,
+        updated_at: postagem.updated_at,
+        user_id: postagem.user_id,
+        user_nickname: postagem.user.nickname 
+      }
+    end
+  
+    render json: { status: 'SUCCESS', message: 'Posts carregados', data: postagens_json }, status: :ok
   end
-
+  
   def destroy
     @postagens = Postagen.find_by(id: params[:id]) 
 
