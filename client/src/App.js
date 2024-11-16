@@ -1,11 +1,17 @@
-import './App.css';
-import MyPostagem from './Components/Postagens';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './Components/Login/Login.js';
+import Cadastro from './Components/Cadastro/Cadastro.js';
 
 function App() {
   return (
-    <div className="App">
-      <MyPostagem />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/signup" element={<Cadastro />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import like from '../assets/style/icons/likeSemFundo.png';
-import likeBlack from '../assets/style/icons/linkePostPreto.png'; 
-import user_ft from '../assets/style/icons/user.png';
-import comment from '../assets/style/icons/comentariosSemFundo.png';
-import menuCom from '../assets/style/icons/menuCom.png';
+import like from '../../assets/style/icons/likeSemFundo.png';
+import likeBlack from '../../assets/style/icons/linkePostPreto.png'; 
+import user_ft from '../../assets/style/icons/user.png';
+import comment from '../../assets/style/icons/comentariosSemFundo.png';
+import menuCom from '../../assets/style/icons/menuCom.png';
 
 function PublicationList({ descricao, numComentarios, numCurtidas, nickname, userId, postId  }) {
   const [liked, setLiked] = useState(false); // Estado para controlar o like

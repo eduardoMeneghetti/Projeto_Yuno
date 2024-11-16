@@ -1,7 +1,7 @@
-import '../assets/style/root.css';
-import '../assets/style/layout.css';
-import '../assets/style/style.css';
-import '../App.css';
+import '../../assets/style/root.css';
+import '../../assets/style/layout.css';
+import '../../assets/style/style.css';
+import '../../App.css';
 import React from 'react';
 import Header from './HeaderPosts';
 import PostForm from './postForm';

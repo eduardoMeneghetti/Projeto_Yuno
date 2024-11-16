@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_11_06_034430) do
+ActiveRecord::Schema[7.2].define(version: 2024_11_06_031945) do
   create_table "comentarios", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.text "descricao", null: false
     t.integer "num_curtidas"
@@ -20,6 +20,11 @@ ActiveRecord::Schema[7.2].define(version: 2024_11_06_034430) do
     t.datetime "updated_at", null: false
     t.index ["postagens_id"], name: "index_comentarios_on_postagens_id"
     t.index ["user_id"], name: "index_comentarios_on_user_id"
+  end
+
+  create_table "postagems", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "postagens", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|

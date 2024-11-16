@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+
+body{
+  font-family: 'Jura', sans-serif;
+  background-color: #FFFCFC;
+}
+
+.main-register{
+  display: flex;              
+  justify-content: center;      
+  align-items: center;          
+  height: 100vh; 
+}
+
+.card-register{
+  display: flex;                
+  flex-direction: column;       
+  align-items: center;          
+  padding: 60px;                
+  background-color: #CDCDCD;     
+  border-radius: 15px;          
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  height: 500px;
+  gap: 15px;
+}
+
+.textfield{
+    margin-bottom: 20px;
+    input{
+        border-radius: 4px;
+    } 
+    input :focus{
+        border-color: #007BFF;
+        outline: none;
+    }
+
+}
+.Nome_completo, .Nickname, .Email, .idade, .password, .password_confirmation{
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+

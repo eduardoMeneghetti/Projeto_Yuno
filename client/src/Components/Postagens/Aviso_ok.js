@@ -1,5 +1,5 @@
-import '../assets/style/avisoOk.css';
-import avisoIcon from '../assets/style/icons/icon_submit.png'; 
+import '../../assets/style/avisoOk.css';
+import avisoIcon from '../../assets/style/icons/icon_submit.png'; 
 
 function AvisoOk() {
   return (

@@ -1,7 +1,7 @@
 // Components/Header.js
 import React from 'react';
-import login from '../assets/style/icons/login.png';
-import logo_text from '../assets/style/icons/LOGO_YUNO_SITE_SEM_FUNDO.png';
+import login from '../../assets/style/icons/login.png';
+import logo_text from '../../assets/style/icons/LOGO_YUNO_SITE_SEM_FUNDO.png';
 
 
 function Header() {
@@ -16,3 +16,5 @@ function Header() {
 }
 
 export default Header;
+
+
